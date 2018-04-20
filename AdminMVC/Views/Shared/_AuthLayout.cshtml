@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,32 +11,26 @@
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    @*<meta name="google-signin-client_id" content="943878812622-3esrgkg1puv20cof6fjb1ki2avg0olca.apps.googleusercontent.com">*@
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="~/Content/assets/images/favicon.ico">
 
-    @RenderSection("style", false)
+    <!-- App css -->
+    <link href="~/Content/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/style.css" rel="stylesheet" type="text/css" />
 
     <script src="~/Content/assets/js/modernizr.min.js"></script>
 
-</head>
-
+</head> 
 <body>
-    @Html.Partial("_NavBar")
-
     @RenderBody()
-    <!-- end wrapper -->
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class=row>
-                <div class="col-12 text-center">
-                    @DateTime.Now.Year © HcodeStudio.
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
+
+    <div class="m-t-40 text-center">
+        <p class="account-copyright"> @DateTime.Now.Year © HcodeStudio.</p>
+    </div>
+
     <!-- jQuery  -->
     <script src="~/Content/assets/js/jquery.min.js"></script>
     <script src="~/Content/assets/js/popper.min.js"></script>
@@ -40,7 +38,10 @@
     <script src="~/Content/assets/js/waves.js"></script>
     <script src="~/Content/assets/js/jquery.slimscroll.js"></script>
 
-   @RenderSection("script", false)
-
+    <!-- App js -->
+    <script src="~/Content/assets/js/jquery.core.js"></script>
+    <script src="~/Content/assets/js/jquery.app.js"></script>
+    @*<script src="https://apis.google.com/js/platform.js" async defer></script>*@
 </body>
+
 </html>

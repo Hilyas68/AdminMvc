@@ -78,3 +78,7 @@ C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Security.xml
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Security.Cookies.xml
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Newtonsoft.Json.dll
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Newtonsoft.Json.xml

@@ -185,7 +185,7 @@
                     <li class="dropdown notification-list">
                         <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="false" aria-expanded="false">
-                            <img src="~/Content/assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="ml-1 pro-user-name">Maxine K <i class="mdi mdi-chevron-down"></i> </span>
+                            <img src="~/Content/assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="ml-1 pro-user-name">@User.Identity.Name<i class="mdi mdi-chevron-down"></i> </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                             <!-- item-->
@@ -214,7 +214,7 @@
                             </a>
 
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <a href="@Url.Action("Logout", "Auth")" class="dropdown-item notify-item">
                                 <i class="fi-power"></i> <span>Logout</span>
                             </a>
 
