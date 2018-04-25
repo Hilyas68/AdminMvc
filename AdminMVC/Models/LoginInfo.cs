@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace AdminMVC.Models
 {
@@ -14,5 +11,8 @@ namespace AdminMVC.Models
         public string Username { get; set; }
         [Required]
         public string Password { get; set; }
+
+        [HiddenInput]
+        public string ReturnUrl { get; set; }
     }
 }

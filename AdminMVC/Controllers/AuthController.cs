@@ -1,4 +1,5 @@
 ﻿using AdminMVC.Models;
+using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using System.Security.Claims;
 using System.Web;
@@ -8,6 +9,12 @@ namespace AdminMVC.Controllers
 {
     public class AuthController : Controller
     {
+
+        private UserManager<AppUser, int> _userManager;
+        public AuthController()
+        {
+            _userManager = StartUp.UserManagerFactory.Invoke();
+        }
         public IAuthenticationManager Authentication
         {
             get
@@ -30,12 +37,13 @@ namespace AdminMVC.Controllers
         [HttpPost]
         public ActionResult Login(LoginInfo info)
         {
-            string username = "htope68@gmail.com";
-            string password = "admin";
+            //string username = "htope68@gmail.com";
+            //string password = "admin";
 
             if (this.ModelState.IsValid)
             {
-                if (username.Equals(info.Username) && password.Equals(info.Password))
+                var loginDetails = _userManager.Find(info.Username, info.Password);
+                if (loginDetails != null)
                 {
                     ClaimsIdentity claimsIdentity =
                         new ClaimsIdentity("ApplicationCookie");
@@ -46,7 +54,7 @@ namespace AdminMVC.Controllers
                     var ctxt = this.Request.GetOwinContext();
                     ctxt.Authentication.SignIn(claimsIdentity);
 
-                    return RedirectToAction("Index", "Home");
+                    return Redirect(GetRedirectUrl(info.ReturnUrl));
                 }
                 else
                 {
@@ -62,6 +70,16 @@ namespace AdminMVC.Controllers
         {
             var model = new LoginInfo();
             return View(model);
+        }
+
+        private string GetRedirectUrl(string returnUrl)
+        {
+            if (string.IsNullOrEmpty(returnUrl) || !Url.IsLocalUrl(returnUrl))
+            {
+                return Url.Action("Index", "Home");
+            }
+
+            return returnUrl;
         }
     }
 

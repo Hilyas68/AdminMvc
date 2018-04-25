@@ -68,7 +68,6 @@ C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\obj\Debug\AdminMVC.csproj.CoreComp
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\obj\Debug\AdminMVC.csproj.CopyComplete
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\obj\Debug\AdminMVC.dll
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\obj\Debug\AdminMVC.pdb
-C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\obj\Debug\AdminMVC.csprojResolveAssemblyReference.cache
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.dll
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Security.Cookies.dll
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Security.dll
@@ -82,3 +81,14 @@ C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Security.Google
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Newtonsoft.Json.dll
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Newtonsoft.Json.xml
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\EntityFramework.dll
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\EntityFramework.SqlServer.dll
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\EntityFramework.xml
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\EntityFramework.SqlServer.xml
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\obj\Debug\AdminMVC.Migrations.Initial.resources
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\obj\Debug\AdminMVC.csproj.GenerateResource.cache
+C:\Users\Hcode\source\repos\AdminMVC\AdminMVC\obj\Debug\AdminMVC.csprojResolveAssemblyReference.cache

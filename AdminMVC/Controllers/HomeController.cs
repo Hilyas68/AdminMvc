@@ -2,12 +2,15 @@
 
 namespace AdminMVC.Controllers
 {
-    [RequireHttps]
+    [Authorize]
     public class HomeController : Controller
     {
-        // GET: Home
-        [Authorize]
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
         {
             return View();
         }
